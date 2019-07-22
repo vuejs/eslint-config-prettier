@@ -8,8 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vuejs/vue-cli.git",
-    "directory": "packages/@vue/eslint-config-prettier"
+    "url": "git+https://github.com/vuejs/eslint-config-prettier.git"
   },
   "keywords": [
     "vue",
@@ -18,9 +17,9 @@
   "author": "Evan You",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vuejs/vue-cli/issues"
+    "url": "https://github.com/vuejs/eslint-config-prettier/issues"
   },
-  "homepage": "https://github.com/vuejs/vue-cli/tree/dev/packages/@vue/eslint-config-prettier#readme",
+  "homepage": "https://github.com/vuejs/eslint-config-prettier#readme",
   "dependencies": {
     "eslint-config-prettier": "^6.0.0"
   },

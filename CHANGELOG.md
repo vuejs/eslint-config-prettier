@@ -1,3 +1,15 @@
+<a name="6.0.0"></a>
+## [6.0.0](https://github.com/vuejs/eslint-config-prettier/compare/v5.1.0...v6.0.0) (2019-11-18)
+
+
+### Breaking Changes
+
+* feat!: move `eslint:recommended` to a separate `recommended` config, fixes #3. ([de7a518](https://github.com/vuejs/eslint-config-prettier/commit/de7a518))
+
+`eslint:recommended` is no longer included in the default configuration.
+Users of old versions need to update their `extends` to use `@vue/prettier/recommended`, or `['eslint:recommended', '@vue/prettier]`.
+
+
 <a name="5.1.0"></a>
 ## [5.1.0](https://github.com/vuejs/eslint-config-prettier/compare/v5.0.0...v5.1.0) (2019-11-17)
 

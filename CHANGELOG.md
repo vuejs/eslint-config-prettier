@@ -1,3 +1,13 @@
+<a name="5.1.0"></a>
+## [5.1.0](https://github.com/vuejs/eslint-config-prettier/compare/v5.0.0...v5.1.0) (2019-11-17)
+
+
+### New Features
+
+* Re-exports `@typescript-eslint` and `standard` configs, so that this config can be used in combination with `@vue/typescript/recommended` or `@vue/standard` ([939f722](https://github.com/vuejs/eslint-config-prettier/commit/939f722))
+
+
+
 <a name="5.0.0"></a>
 ## [5.0.0](https://github.com/vuejs/eslint-config-prettier/compare/4578703...v5.0.0) (2019-07-22)
 

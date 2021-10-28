@@ -2,6 +2,12 @@
 
 Please [use `eslint-plugin-prettier` directly](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration).
 
+To migrate from `@vue/eslint-config-prettier`:
+1. `npm add -D eslint-config-prettier eslint-plugin-prettier`
+2. `npm remove @vue/eslint-config-prettier`
+3. Change `@vue/prettier` to `plugin:prettier/recommended` in your ESLint configuration
+4. If there's `@vue/prettier/@typescript-eslint` in the existing configuration, remove it.
+
 # @vue/eslint-config-prettier
 
 > eslint-config-prettier for Vue CLI

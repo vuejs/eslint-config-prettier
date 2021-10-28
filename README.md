@@ -1,3 +1,7 @@
+# Deprecated
+
+Please [use `eslint-plugin-prettier` directly](https://github.com/prettier/eslint-plugin-prettier#recommended-configuration).
+
 # @vue/eslint-config-prettier
 
 > eslint-config-prettier for Vue CLI

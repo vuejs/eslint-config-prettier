@@ -1,10 +1,7 @@
 module.exports = {
-  plugins: ['prettier'],
-  extends: [
-    require.resolve('eslint-config-prettier'),
-    require.resolve('eslint-config-prettier/vue')
-  ],
+  plugins: ["prettier"],
+  extends: ["plugin:prettier/recommended"],
   rules: {
-    'prettier/prettier': 'warn'
-  }
-}
+    "prettier/prettier": "warn",
+  },
+};

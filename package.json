@@ -1,8 +1,9 @@
 {
   "name": "@vue/eslint-config-prettier",
   "version": "6.0.0",
-  "description": "eslint-config-prettier for Vue CLI",
+  "description": "eslint-config-prettier for Vue",
   "main": "index.js",
+  "files": ["index.js"],
   "publishConfig": {
     "access": "public"
   },
@@ -12,7 +13,9 @@
   },
   "keywords": [
     "vue",
-    "cli"
+    "cli",
+    "eslint",
+    "prettier"
   ],
   "author": "Evan You",
   "license": "MIT",
@@ -21,11 +24,21 @@
   },
   "homepage": "https://github.com/vuejs/eslint-config-prettier#readme",
   "dependencies": {
-    "eslint-config-prettier": "^6.0.0"
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.5.0",
+    "prettier": "^2.5.1"
   },
   "peerDependencies": {
-    "eslint": ">= 5.0.0",
-    "eslint-plugin-prettier": "^3.1.0",
-    "prettier": ">= 1.13.0"
+    "eslint": ">= 7.28.0",
+    "prettier": ">= 2.0.0"
+  },
+  "eslintConfig": {
+    "extends": ["./index.js"]
+  },
+  "scripts": {
+    "lint": "eslint index.js --fix"
   }
 }

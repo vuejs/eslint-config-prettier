@@ -34,6 +34,37 @@ module.exports = {
 }
 ```
 
+This configuration is the most straightward way to use ESLint with Prettier.
+
+It disables all rules that are unnecessary or might conflict with Prettier.
+It also enables the `eslint-plugin-prettier` plugin, which runs Prettier as an ESLint rule and reports differences as individual ESLint issues.
+
+By default all formatting issues are reported as warnings, and will be automatically fixed during `eslint --fix`.
+
+## Use Separate Commands for Linting and Formatting
+
+While the above setup is very straightforward, it is not necessarily the best way.
+
+Running prettier inside the linter slows down the linting process, might clutter the editor with annoying warnings, and adds one layer of indirection where things may break.
+[Prettier's official documentation](https://prettier.io/docs/en/integrating-with-linters.html) recommends using separate commands for linting and formatting, i.e., Prettier for code formatting concerns and ESLint for code-quality concerns.
+
+So we offered an additional ruleset to support this workflow:
+
+```js
+require("@rushstack/eslint-patch/modern-module-resolution")
+
+module.exports = {
+  extends: [
+    // ... other configs
+    "@vue/eslint-config-prettier/skip-formatting"
+  ]
+}
+```
+
+Formatting issues won't be reported with this config.
+
+You can run `prettier --check .` separately to check for formatting issues, or `prettier --write .` to fix them.
+
 ## Further Reading
 
 The default config is based on the recommended configuration of [`eslint-plugin-prettier`](https://github.com/prettier/eslint-plugin-prettier/#recommended-configuration), which also depends on [`eslint-config-prettier`](https://github.com/prettier/eslint-config-prettier). Please refer to their corresponding documentations for more implementation details.

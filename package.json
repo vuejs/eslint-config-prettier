@@ -4,7 +4,8 @@
   "description": "eslint-config-prettier for Vue",
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "skip-formatting.js"
   ],
   "publishConfig": {
     "access": "public"
@@ -43,6 +44,6 @@
     ]
   },
   "scripts": {
-    "lint": "eslint index.js --fix"
+    "lint": "eslint *.js --fix"
   }
 }

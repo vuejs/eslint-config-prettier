@@ -27,16 +27,16 @@
   },
   "homepage": "https://github.com/vuejs/eslint-config-prettier#readme",
   "dependencies": {
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0"
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0"
   },
   "devDependencies": {
-    "eslint": "^8.5.0",
-    "prettier": "^2.5.1"
+    "eslint": "^8.45.0",
+    "prettier": "^3.0.0"
   },
   "peerDependencies": {
     "eslint": ">= 7.28.0",
-    "prettier": ">= 2.0.0"
+    "prettier": ">= 3.0.0"
   },
   "eslintConfig": {
     "extends": [

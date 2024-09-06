@@ -2,6 +2,7 @@
   "name": "@vue/eslint-config-prettier",
   "version": "9.0.0",
   "description": "eslint-config-prettier for Vue",
+  "type": "module",
   "main": "index.js",
   "files": [
     "index.js",
@@ -27,15 +28,15 @@
   },
   "homepage": "https://github.com/vuejs/eslint-config-prettier#readme",
   "dependencies": {
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1"
   },
   "devDependencies": {
-    "eslint": "^8.45.0",
-    "prettier": "^3.0.0"
+    "eslint": "^9.9.1",
+    "prettier": "^3.3.3"
   },
   "peerDependencies": {
-    "eslint": ">= 8.0.0",
+    "eslint": ">= 8.21.0",
     "prettier": ">= 3.0.0"
   },
   "eslintConfig": {

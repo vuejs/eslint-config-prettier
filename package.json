@@ -8,6 +8,10 @@
     "index.js",
     "skip-formatting.js"
   ],
+  "exports": {
+    ".": "./index.js",
+    "skip-formatting": "./skip-formatting.js"
+  },
   "publishConfig": {
     "access": "public"
   },

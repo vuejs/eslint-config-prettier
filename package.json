@@ -10,7 +10,7 @@
   ],
   "exports": {
     ".": "./index.js",
-    "skip-formatting": "./skip-formatting.js"
+    "./skip-formatting": "./skip-formatting.js"
   },
   "publishConfig": {
     "access": "public"

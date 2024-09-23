@@ -1,6 +1,6 @@
 {
   "name": "@vue/eslint-config-prettier",
-  "version": "10.0.0-rc.0",
+  "version": "10.0.0-rc.1",
   "description": "eslint-config-prettier for create-vue",
   "type": "commonjs",
   "main": "index.js",

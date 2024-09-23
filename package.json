@@ -17,7 +17,8 @@
   },
   "keywords": [
     "vue",
-    "cli",
+    "create-vue",
+    "create-eslint-config",
     "eslint",
     "prettier"
   ],
@@ -32,19 +33,15 @@
     "eslint-plugin-prettier": "^5.2.1"
   },
   "devDependencies": {
-    "eslint": "^9.9.1",
+    "eslint": "^9.11.0",
     "prettier": "^3.3.3"
   },
   "peerDependencies": {
     "eslint": ">= 8.21.0",
     "prettier": ">= 3.0.0"
   },
-  "eslintConfig": {
-    "extends": [
-      "./index.js"
-    ]
-  },
   "scripts": {
-    "lint": "eslint *.js --fix"
+    "lint": "eslint . --fix",
+    "format": "prettier *.{js,md} --write"
   }
 }

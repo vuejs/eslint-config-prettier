@@ -1,7 +1,8 @@
 {
   "name": "@vue/eslint-config-prettier",
   "version": "9.0.0",
-  "description": "eslint-config-prettier for Vue",
+  "description": "eslint-config-prettier for create-vue",
+  "type": "commonjs",
   "main": "index.js",
   "files": [
     "index.js",
@@ -16,7 +17,8 @@
   },
   "keywords": [
     "vue",
-    "cli",
+    "create-vue",
+    "create-eslint-config",
     "eslint",
     "prettier"
   ],
@@ -27,23 +29,19 @@
   },
   "homepage": "https://github.com/vuejs/eslint-config-prettier#readme",
   "dependencies": {
-    "eslint-config-prettier": "^9.0.0",
-    "eslint-plugin-prettier": "^5.0.0"
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1"
   },
   "devDependencies": {
-    "eslint": "^8.45.0",
-    "prettier": "^3.0.0"
+    "eslint": "^9.11.0",
+    "prettier": "^3.3.3"
   },
   "peerDependencies": {
-    "eslint": ">= 8.0.0",
+    "eslint": ">= 8.21.0",
     "prettier": ">= 3.0.0"
   },
-  "eslintConfig": {
-    "extends": [
-      "./index.js"
-    ]
-  },
   "scripts": {
-    "lint": "eslint *.js --fix"
+    "lint": "eslint . --fix",
+    "format": "prettier *.{js,md} --write"
   }
 }

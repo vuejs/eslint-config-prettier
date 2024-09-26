@@ -1,4 +1,4 @@
-const recommendedConfig = require("eslint-config-prettier/recommended");
+const recommendedConfig = require("eslint-plugin-prettier/recommended");
 
 module.exports = {
   ...recommendedConfig,

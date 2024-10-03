@@ -1,6 +1,6 @@
 # @vue/eslint-config-prettier
 
-> eslint-config-prettier for Vue
+> A wrapper around `eslint-config-prettier` designed to work more intuitively with `create-vue` setups.
 
 This config is specifically designed to be used by `create-vue` setups
 and is not meant for outside use (it can be used but some adaptations
@@ -21,7 +21,7 @@ Please also make sure that you have `prettier` and `eslint` installed.
 
 > Note: the current version doesn't support the legacy `.eslintrc*` configuraion format. For that you need to use version 9 or earlier. See the [corresponding README](https://www.npmjs.com/package/@vue/eslint-config-prettier/v/legacy-eslintrc) for more usage instructions.
 
-Import `@vue/eslint-config-prettier` in `eslint.config.js` (or `eslint.config.mjs`), and put it in the configuration array – &&**after** other configs that you want to override.
+Import `@vue/eslint-config-prettier` in `eslint.config.js` (or `eslint.config.mjs`), and put it in the configuration array – **after** other configs that you want to override.
 
 ```js
 import someConfig from "some-other-config-you-use";

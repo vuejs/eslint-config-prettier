@@ -1,0 +1,9 @@
+{
+  "include": ["index.js", "skip-formatting.js"],
+  "compilerOptions": {
+    "allowJs": true,
+    "declaration": true,
+    "emitDeclarationOnly": true,
+    "skipLibCheck": true
+  }
+}

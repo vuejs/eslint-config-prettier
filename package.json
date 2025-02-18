@@ -37,11 +37,11 @@
   "homepage": "https://github.com/vuejs/eslint-config-prettier#readme",
   "dependencies": {
     "eslint-config-prettier": "^10.0.1",
-    "eslint-plugin-prettier": "^5.2.2"
+    "eslint-plugin-prettier": "^5.2.3"
   },
   "devDependencies": {
-    "eslint": "^9.18.0",
-    "prettier": "^3.4.2"
+    "eslint": "^9.20.1",
+    "prettier": "^3.5.1"
   },
   "peerDependencies": {
     "eslint": ">= 8.21.0",

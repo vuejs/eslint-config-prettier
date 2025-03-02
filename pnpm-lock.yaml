@@ -19,7 +19,7 @@ importers:
         specifier: ^9.20.1
         version: 9.20.1
       prettier:
-        specifier: ^3.5.1
+        specifier: 3.5.1
         version: 3.5.1
 
 packages:

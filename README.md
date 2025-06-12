@@ -24,10 +24,11 @@ Please also make sure that you have `prettier` and `eslint` installed.
 Import `@vue/eslint-config-prettier` in `eslint.config.js` (or `eslint.config.mjs`), and put it in the configuration array – **after** other configs that you want to override.
 
 ```js
+import { defineConfig } from "eslint/config";
 import someConfig from "some-other-config-you-use";
 import prettierConfig from "@vue/eslint-config-prettier";
 
-export default [someConfig, prettierConfig];
+export default defineConfig([someConfig, prettierConfig]);
 ```
 
 Make sure to put it **last**, so it gets the chance to override other configs.
@@ -49,10 +50,11 @@ Running prettier inside the linter slows down the linting process, might clutter
 So we offered an additional ruleset to support this workflow:
 
 ```js
+import { defineConfig } from "eslint/config";
 import someConfig from "some-other-config-you-use";
 import skipFormattingConfig from "@vue/eslint-config-prettier/skip-formatting";
 
-export default [someConfig, skipFormattingConfig];
+export default defineConfig([someConfig, skipFormattingConfig]);
 ```
 
 Formatting issues won't be reported with this config.
